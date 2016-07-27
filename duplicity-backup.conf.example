@@ -147,6 +147,15 @@ DEST="s3+http://foobar-backup-bucket/backup-folder/"
 #
 #STORAGECLASS="--s3-use-ia"
 #
+# SET SERVER-SIDE ENCRYPTION for AWS
+#
+# Amazon S3 server-side encryption uses one of the strongest block ciphers available, 
+# 256-bit Advanced Encryption Standard (AES-256), to encrypt your data.
+# You can leave this blank if want to go with standard unencrypted.
+# The sse options are --s3-use-server-side-encryption
+#
+#SERVER_SIDE_ENCRYPTION='--s3-use-server-side-encryption'
+#
 # S3CMD INFORMATION
 # Most people don't need this, but in some cases
 # you may want to specify a custom configuration file
