@@ -625,6 +625,7 @@ duplicity_backup()
   {
     eval "${ECHO}" "${DUPLICITY}" "${OPTION}" "${VERBOSITY}" "${STATIC_OPTIONS}" \
     "${STORAGECLASS}" \
+    "${SERVER_SIDE_ENCRYPTION}" \
     "${ENCRYPT}" \
     "${EXCLUDE}" \
     "${INCLUDE}" \
