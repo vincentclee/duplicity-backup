@@ -6,9 +6,12 @@ sudo: false
 addons:
   apt:
     sources:
-    - debian-sid
-    packages:
-    - shellcheck
+      - debian-sid
+
+before-script:
+  - "sudo apt-get install cabal-install"
+  - "cabal update"
+  - "cabal install shellcheck"
 
 script:
     - shellcheck -e SC2034 duplicity-backup.sh duplicity-backup.conf.example
